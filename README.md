@@ -1,6 +1,12 @@
 # Zerolog GORM logger
 Simple zerolog implementation of GORM logger
 
+# Install
+
+```bash
+go get github.com/vitaliy-art/gorm-zerolog
+```
+
 # Usage
 
 ```go
