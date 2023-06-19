@@ -42,6 +42,6 @@ logger := gormzerolog.NewGormLogger().WithInfo(func() gormzerolog.Event {
 })
 
 db, err := gorm.Open(sqlite.Open(":memory:"), &gorm.Config{
-    Logger: gormzerolog.NewGormLogger()
+    Logger: logger,
 })
 ```
