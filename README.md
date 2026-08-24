@@ -1,19 +1,20 @@
 # Zerolog GORM logger
+
 Simple zerolog implementation of GORM logger
 
-# Install
+## Install
 
 ```bash
 go get github.com/vitaliy-art/gorm-zerolog
 ```
 
-# Usage
+## Usage
 
 ```go
 import (
-	"github.com/glebarez/sqlite"
-	gormzerolog "github.com/vitaliy-art/gorm-zerolog"
-	"gorm.io/gorm"
+ "github.com/glebarez/sqlite"
+ gormzerolog "github.com/vitaliy-art/gorm-zerolog"
+ "gorm.io/gorm"
 )
 
 db, err := gorm.Open(sqlite.Open(":memory:"), &gorm.Config{
@@ -21,16 +22,16 @@ db, err := gorm.Open(sqlite.Open(":memory:"), &gorm.Config{
 })
 ```
 
-# Example with logger customization
+## Example with logger customization
 
 ```go
 import (
-	"time"
+ "time"
 
-	"github.com/glebarez/sqlite"
-	"github.com/rs/zerolog"
-	gormzerolog "github.com/vitaliy-art/gorm-zerolog"
-	"gorm.io/gorm"
+ "github.com/glebarez/sqlite"
+ "github.com/rs/zerolog"
+ gormzerolog "github.com/vitaliy-art/gorm-zerolog"
+ "gorm.io/gorm"
 )
 
 writer := zerolog.NewConsoleWriter()
