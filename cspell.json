@@ -1,0 +1,15 @@
+{
+    "words": [
+        "Containsf",
+        "Equalf",
+        "glebarez",
+        "gorm",
+        "gormzerolog",
+        "vitaliy",
+        "zerolog"
+    ],
+    "ignorePaths": [
+        "go.mod",
+        "go.sum"
+    ]
+}
